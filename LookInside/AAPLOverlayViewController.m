@@ -42,11 +42,7 @@
 }
 
 - (void)setPhotoView:(AAPLPhotoCollectionViewCell *)photoView {
-    if (currentPhotoView != photoView) {
-        currentPhotoView = photoView;
-        
-        [self configureCIObjects];
-    }
+    _photoView = photoView;
 }
 
 - (void)sliderChanged:(id)sender
@@ -181,6 +177,7 @@
     [[self view] addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(>=30)-[hueLabel]-[hueSlider]-[saturationLabel]-[saturationSlider]-[brightnessLabel]-[brightnessSlider]-[saveButton]-(>=10)-[imageView]|" options:0 metrics:nil views:views]];
     
     [self sliderChanged:nil];
+    [self configureCIObjects];
 }
 
 @end

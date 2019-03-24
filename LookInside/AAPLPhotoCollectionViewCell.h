@@ -12,9 +12,8 @@
 
 @interface AAPLPhotoCollectionViewCell : UICollectionViewCell
 {
-    UIImageView *imageView;
 }
 
-@property (nonatomic) UIImage *image;
+@property (nonatomic) UIImageView *imageView;
 
 @end
