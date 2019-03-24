@@ -15,7 +15,8 @@
 
 - (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source
 {
-    return [[AAPLCoolPresentationController alloc] initWithPresentingViewController:presenting presentedViewController:presented];
+
+    return [[AAPLCoolPresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
 }
 
 - (AAPLCoolAnimatedTransitioning *)animationController

@@ -1,13 +1,3 @@
-/*
- Copyright (C) 2014 Apple Inc. All Rights Reserved.
- See LICENSE.txt for this sample’s licensing information
- 
- Abstract:
- 
-  AAPLOverlayViewController implementation.
-  
- */
-
 #import "AAPLOverlayViewController.h"
 
 @interface AAPLOverlayViewController ()
@@ -96,7 +86,7 @@
         CGImageRelease(cgImage);
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            [imageView setImage:image];
+            [self->imageView setImage:image];
         });
     });
     

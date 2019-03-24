@@ -99,7 +99,7 @@
     [[self collectionViewLayout] invalidateLayout];
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskAll;
 }

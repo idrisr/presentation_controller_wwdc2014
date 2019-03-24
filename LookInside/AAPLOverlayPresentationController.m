@@ -15,7 +15,7 @@
 
 - (instancetype)initWithPresentingViewController:(UIViewController *)presentingViewController presentedViewController:(UIViewController *)presentedViewController
 {
-    self = [super initWithPresentingViewController:presentingViewController presentedViewController:presentedViewController];
+    self = [super initWithPresentedViewController:presentedViewController presentingViewController:presentingViewController];
     if(self)
     {
         [self prepareDimmingView];
@@ -36,7 +36,7 @@
     if([presentedViewController transitionCoordinator])
     {
         [[presentedViewController transitionCoordinator] animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
-            [dimmingView setAlpha:1.0];
+            [self->dimmingView setAlpha:1.0];
         } completion:nil];
     }
     else
@@ -50,7 +50,7 @@
     if([[self presentedViewController] transitionCoordinator])
     {
         [[[self presentedViewController] transitionCoordinator] animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
-            [dimmingView setAlpha:0.0];
+            [self->dimmingView setAlpha:0.0];
         } completion:nil];
     }
     else

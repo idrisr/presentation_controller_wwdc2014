@@ -28,9 +28,8 @@
     {
         presentationControllerClass = [AAPLOverlayPresentationController class];
     }
-    
-    return [[presentationControllerClass alloc]
-            initWithPresentingViewController:presenting presentedViewController:presented];
+
+    return [[presentationControllerClass alloc] initWithPresentedViewController:presented presentingViewController:presenting];
 }
 
 - (AAPLOverlayAnimatedTransitioning *)animationController
