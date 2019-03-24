@@ -42,11 +42,8 @@
 }
 
 - (void)setPhotoView:(AAPLPhotoCollectionViewCell *)photoView {
-    if (currentPhotoView != photoView) {
-        currentPhotoView = photoView;
-        
-        [self configureCIObjects];
-    }
+    _photoView = photoView;
+    [self configureCIObjects];
 }
 
 - (void)sliderChanged:(id)sender
