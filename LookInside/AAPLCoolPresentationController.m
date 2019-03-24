@@ -12,7 +12,7 @@
 
 @implementation AAPLCoolPresentationController
 
-- (instancetype)initWithPresentingViewController:(UIViewController *)presentingViewController presentedViewController:(UIViewController *)presentedViewController
+-(instancetype)initWithPresentedViewController:(UIViewController *)presentedViewController presentingViewController:(UIViewController *)presentingViewController
 {
 
     self = [super initWithPresentedViewController:presentedViewController presentingViewController:presentingViewController];
