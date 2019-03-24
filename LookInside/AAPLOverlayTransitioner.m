@@ -1,13 +1,3 @@
-/*
- Copyright (C) 2014 Apple Inc. All Rights Reserved.
- See LICENSE.txt for this sample’s licensing information
- 
- Abstract:
- 
-  AAPLOverlayAnimatedTransitioning and AAPLOverlayTransitioningDelegate implementations.
-  
- */
-
 #import "AAPLOverlayTransitioner.h"
 #import "AAPLOverlayPresentationController.h"
 #import "AAPLCoolPresentationController.h"
